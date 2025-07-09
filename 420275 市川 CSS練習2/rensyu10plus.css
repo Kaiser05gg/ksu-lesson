@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+  background-color: #4B4B4B;
+  background: linear-gradient(to bottom, #4B4B4B, #282828) fixed;
+}
+
+.block {
+  background-color: #5F5F5F;
+  border-radius: 5px;
+}
+
+a:link {
+  color: #FFFFFF;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #323232;
+  background-color: #B0B0B0;
+}
+
+a:active {
+  color: #FFFF00;
+}
+
+.pop {
+  color: #5F5F5F;
+  background-color: #FFB429;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+  }
+
+  .block {
+    margin: 4px;
+    padding: 4px;
+    width: auto;
+  }
+
+}

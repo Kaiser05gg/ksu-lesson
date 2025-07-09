@@ -1,0 +1,11 @@
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url('city.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}

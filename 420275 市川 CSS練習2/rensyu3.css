@@ -1,0 +1,6 @@
+.message {
+  background-color: orange;
+  padding: 20px;
+  border: solid 2px gray;
+  max-width: 400px;
+}

@@ -1,0 +1,16 @@
+.midasi {
+  margin: 2em;
+}
+
+.honbun {
+  margin: 2em;
+  line-height: 2em;
+  font-family: Arial, "MS PMincho", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+body {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

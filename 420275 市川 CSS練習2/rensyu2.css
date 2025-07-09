@@ -1,0 +1,7 @@
+ul {
+  list-style-image: url('star.gif');
+}
+
+li {
+  margin-bottom: 1em;
+}

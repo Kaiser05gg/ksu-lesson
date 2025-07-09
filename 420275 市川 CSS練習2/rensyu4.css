@@ -1,0 +1,13 @@
+body {
+  background-color: #eeeeee;
+}
+
+.boxClass {
+  background-color: white;
+  border: solid 1px #666666;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background: linear-gradient(to bottom, #ddeeff, #aabbdd);
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.2);
+}
