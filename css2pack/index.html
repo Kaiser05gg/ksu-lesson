@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>ガジェットブログ</title>
+  <style>
+    header,
+    nav,
+    article,
+    aside,
+    footer {
+      box-sizing: border-box;
+      border: dashed 1px #8883;
+      transition: 1.5s;
+    }
+
+    header:hover,
+    nav:hover,
+    article:hover,
+    aside:hover,
+    footer:hover {
+      background-color: #0ff2;
+    }
+
+    .memo {
+      position: absolute;
+      bottom: 16px;
+      margin: 0em 1em;
+      padding: 1em;
+      color: blue;
+      background: #fffc;
+      backdrop-filter: blur(6px);
+      border: solid 1px blue;
+      border-radius: 4px;
+    }
+
+    .memo p:first-child {
+      margin-top: 0;
+    }
+
+    .memo p:last-child {
+      margin-bottom: 0;
+    }
+
+    *[data-descr] {
+      position: relative;
+
+    }
+
+    *[data-descr]:hover::after {
+      content: attr(data-descr);
+      position: absolute;
+      right: 4px;
+      bottom: 4px;
+      min-width: 50px;
+      width: max-content;
+      color: blue;
+      background-color: #fffc;
+      backdrop-filter: blur(6px);
+      border: solid 1px blue;
+      border-radius: 4px;
+      padding: 8px;
+      z-index: 1;
+      text-align: center;
+      font-family: Consolas, Menlo, monospace;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header data-descr="header">
+    <h1><a href="#">Gadget BLOG</a></h1>
+    <p>物欲にまみれた管理人が気になるガジェットを紹介しているブログです。</p>
+  </header>
+
+  <nav data-descr="nav">
+    <ul>
+      <li><a href="#">トップ</a></li>
+      <li><a href="#">ガジェット</a></li>
+      <li><a href="#">その他雑貨</a></li>
+      <li><a href="#">過去の記事</a></li>
+      <li><a href="#">よくある質問</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+
+    <article data-descr="article">
+      <h1>新型タブレット端末ついに発売</h1>
+
+      <p>今週、Mapple社の新型タブレット端末iBoard
+        Pro(第4世代)がついに発売となりました。秋葉原の各店舗にも並んでいる模様です。管理人も早速、朝から行列に並んできました。入荷数は限られているようでしたが苦労の甲斐あって無事入手に成功！
+        早速レビューしていきたいと思います。</p>
+
+      <p>CPUはZMD社のZ99 8840を搭載。GEN4 CPUとしては最多のコア数である16コアを搭載。内蔵グラフィックチップとの接続インターフェイスはPCIe 3.0 x16からPCIe 4.0
+        x16になり、帯域幅が従来の最大128Gbpsから最大256Gbpsに向上しています。なお、M.2コネクタ位置がPCIe
+        x16スロットに隣接する仕様になったため、本体の筐体サイズは202×96×13mmから270×122×15mmと大型化している点には注意が必要のようです。</p>
+    </article>
+
+
+    <aside data-descr="aside">
+      <h1>特集</h1>
+      <ul>
+        <li><a href="#">新しい通信方式５Ｇについて</a></li>
+        <li><a href="#">バッテリーを長持ちさせる方法</a></li>
+        <li><a href="#">スマホと一緒の便利な生活</a></li>
+        <li><a href="#">100円ショップでお手軽DIY</a></li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <footer data-descr="footer">
+    <p>Copyright © 2007-2020 Gadget Technology inc. All Rights Reserved.</p>
+  </footer>
+
+  <div class="memo">
+    <p>これは、課題前半部分の完成例です。</p>
+    <p>ボックスの境界が分かりやすいように、周囲に点線を追加しています。また、マウスで触るとボックスの背景色が変わります。</p>
+    <p>ブラウザで画面の横幅を広くしたり狭くしたりすると、「特集」のボックス位置が移動する仕組みが備わっていますので、移動する様子を確かめてみましょう。</p>
+  </div>
+
+</body>
+
+</html>

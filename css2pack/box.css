@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* ボックステスト */
+
+* { box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; }
+
+body { background-color: white; }
+
+hr { margin-top:80px;}
+
+header,nav,article,aside,footer,[class^="box"],div:not([class]) 
+	{
+	border: solid 8px #fb8;
+	color: #fb8;
+	background-color: #fea;
+	text-align: center;
+	line-height: 150px;
+	font-family: Verdata, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+	}
+
+body > div:not([class]) {min-height: 200px}
+
+[class^="box"] > *:not([class^="box"]) {
+	min-height: 0;
+	line-height: 1.5;
+	color: #000000;
+	font-size: 14px;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	font-weight: normal;
+	text-align: left;
+	}
+
+
+[class^="box"] > [class^="box"],
+div:not([class]) > div:not([class]) 
+	{
+	border-color: #fc6;
+	color: #fc6;
+	background-color: #ffe;
+	}
+
+
+[class^="box"] > [class^="box"] > [class^="box"]	{
+	border-color: #aaf;
+	color: #aaf;
+	background-color: #eef;
+	}
+
+[class^="box"] > [class^="box"] > [class^="box"] > [class^="box"]	{
+	border-color: #afa;
+	color: #afa;
+	background-color: #efe;
+	}
+
+
